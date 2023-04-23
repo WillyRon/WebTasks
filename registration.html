@@ -1,133 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация на аттестацию</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <a class="logo" href="index.html"><img src="./img/logo.png" alt="logo"></a>
-            <h1>Программные технологии интернета</h1>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">О себе</a></li>
-                <li><a href="resume.html">Резюме</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Компетенции</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="registration.html">Регистрация на аттестацию</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="index.html"><img src="./img/logo.png" alt="logo"></a></li>
+            <li><a href="index.html">О себе</a></li>
+            <li><a href="resume.html">Резюме</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Компетенции</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="registration.html">Регистрация на аттестацию</a></li>
+        </ul>
+
+        <h1>Веб - технологии</h1>
     </header>
 
     <main>
         <form action="#">
-            <div class="regbl">
                 <div>
-                    <label for="surname">
-                        <input type="text" id="surname">
-                        <span>Фамилия</span>
-                    </label>
+                    <div>
+                        <label for="surname">
+                            <input type="text" id="surname">
+                            <span>Фамилия</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="name">
+                            <input type="text" id="name">
+                            <span>Имя</span>
+                        </label>
+                    </div>
                 </div>
                 <div>
-                    <label for="name">
-                        <input type="text" id="name">
-                        <span>Имя</span>
-                    </label>
+                    <div>
+                        <label for="login">
+                            <input type="text" id="login">
+                            <span>Логин</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">
+                            <input type="password" id="password">
+                            <span>Пароль</span>
+                        </label>
+                    </div>
                 </div>
+            <div >
+                    <label>Выберите время</label>
+                    <div>
+                        <input id="time-1" type="radio" name="time">
+                        <label for="time-1">9:00 - 10:30</label>
+                    </div>
+                    <div>
+                        <input id="time-2" type="radio" name="time">
+                        <label for="time-2">10:40 - 12:10</label>
+                    </div>
+                    <div>
+                        <input id="time-3" type="radio" name="time">
+                        <label for="time-3">12:50 - 14:20</label>
+                    </div>
+                    <div>
+                        <input id="time-4" type="radio" name="time">
+                        <label for="time-4">14:30 - 16:00</label>
+                    </div>
+                    <div>
+                        <input id="time-5" type="radio" name="time">
+                        <label for="time-5">16:10 - 17:40</label>
+                    </div>
+                    <label>Выберите форму контроля</label>
+                    <div>
+                        <input id="form-control-6" type="radio" name="control">
+                        <label for="form-control-6">текст</label>
+                    </div>
+                    <div>
+                        <input id="form-control-6" type="radio" name="control">
+                        <label for="form-control-6">собеседование</label>
+                    </div>
+                    <div>
+                        <input id="form-control-6" type="radio" name="control">
+                        <label for="form-control-6">доклад</label>
+                    </div>
+                    <div>
+                        <input id="form-control-6" type="radio" name="control">
+                        <label for="form-control-6">контрольная работа</label>
+                    </div>
             </div>
-            <div class="regbl">
-                <div>
-                    <label for="login">
-                        <input type="text" id="login">
-                        <span>Логин</span>
-                    </label>
-                </div>
-                <div>
-                    <label for="password">
-                        <input type="password" id="password">
-                        <span>Пароль</span>
-                    </label>
-                </div>
+            <div >
+                    <label for="select-lesson">Выберите предмет</label>
+                    <select name="select-lesson" id="select-lesson">
+                        <option value="1">Программирование в UNIX</option>
+                        <option value="2">Программные технологии ИНТЕРНЕТ</option>
+                        <option value="3">Разработка приложений на Java</option>
+                        <option value="4">Функциональное программирование</option>
+                    </select><br>
+                    <label>Проверить данные</label>
+                    <button>Отправить</button>  
             </div>
-            <div class="regbl">
-                <div>
-                <label>Выберите время</label>
-                <div>
-                    <input id="time-1" type="radio" name="time">
-                    <label for="time-1">9:00 - 10:30</label>
-                </div>
-                <div>
-                    <input id="time-2" type="radio" name="time">
-                    <label for="time-2">10:40 - 12:10</label>
-                </div>
-                <div>
-                    <input id="time-3" type="radio" name="time">
-                    <label for="time-3">12:50 - 14:20</label>
-                </div>
-                <div>
-                    <input id="time-4" type="radio" name="time">
-                    <label for="time-4">14:30 - 16:00</label>
-                </div>
-                <div>
-                    <input id="time-5" type="radio" name="time">
-                    <label for="time-5">16:10 - 17:40</label>
-                </div>
-                </div>
-                <div>
-                <label>Выберите форму контроля</label>
-                <div>
-                    <input id="form-control-6" type="radio" name="control">
-                    <label for="form-control-6">текст</label>
-                </div>
-                <div>
-                    <input id="form-control-6" type="radio" name="control">
-                    <label for="form-control-6">собеседование</label>
-                </div>
-                <div>
-                    <input id="form-control-6" type="radio" name="control">
-                    <label for="form-control-6">доклад</label>
-                </div>
-                <div>
-                    <input id="form-control-6" type="radio" name="control">
-                    <label for="form-control-6">контрольная работа</label>
-                </div>
-                </div>
-            </div>
-            <div class="regbl">
-                <label for="select-lesson">Выберите предмет</label>
-                <select name="select-lesson" id="select-lesson">
-                    <option value="1">Программирование в UNIX</option>
-                    <option value="2">Программные технологии ИНТЕРНЕТ</option>
-                    <option value="3">Разработка приложений на Java</option>
-                    <option value="4">Функциональное программирование</option>
-                </select>
-                <label>Проверить данные</label>
-                <button>Отправить</button>
-            </div>
-            <label for="comment">Дополнительная информация</label>
-            <textarea name="comment" id="comment" cols="20" rows="10" style="width: 100%;">
+                <label for="comment">Дополнительная информация</label>
+                <textarea 
+                        name="comment" 
+                        id="comment" 
+                        cols="20" 
+                        rows="10"
+                        style="width: 100%;"
+                    >
                 </textarea>
         </form>
     </main>
 
     <footer>
         <div>
-            <span>Сайт разработан Татлеев Е.А., Copyright © 2023</span>
-        </div>
-        <div>
             <a href="https://vk.com/"><img src="./img/vkontakte.png" alt="vkontakte"></a>
             <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram"></a>
             <a href="https://github.com/"><img src="./img/github.png" alt="github"></a>
         </div>
+
+        <div>
+            <span>Сайт разработан Татлеев Е.А., Copyright © 2023</span>
+        </div>
     </footer>
 </body>
-
 </html>
