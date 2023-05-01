@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Регистрация на аттестацию</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,23 +26,24 @@
             </ul>
         </nav>
     </header>
-
+    <button id="show-list-btn" style="display:block; margin: 0 auto;">Показать список</button>
+  <div id="participants-list" style="display:none; text-align:center;">
+</div>
     <main>
-        <div class="about">
-            <div>
-                <ul class="abt">
-                    <li><img src="./img/avatar.png" alt="avatar"></li>
-                    <li>Татлеев Е.А.</li>
-                    <li>Прог-С 19</li>
-                    <li>Университет <a href="https://uni-dubna.ru/" target="_blank">"Дубна"</a></li>
-                </ul>
-            </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore quam voluptates qui tempora
-                sapiente saepe necessitatibus nostrum distinctio ullam. Expedita cum eum et minus, error dolores
-                temporibus laudantium quam.
-            </div>
-        </div>
+    <?php
+   session_start();
+   $is_logged_in = isset($_SESSION['login']);
+
+    if ($is_logged_in) {
+        include("component/reginvate.php");
+    } else {
+        if (isset($_GET['register'])) {
+            include("component/reg.php");
+        } else {
+            include("component/to_log.php");
+        }
+    }
+    ?>
     </main>
 
     <footer>
@@ -55,6 +56,8 @@
             <a href="https://github.com/"><img src="./img/github.png" alt="github"></a>
         </div>
     </footer>
+    <script src="script/reg_mess.js"></script>
+    <script src="script/List.js"></script>
 </body>
 
 </html>

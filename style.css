@@ -195,8 +195,22 @@ form {
     padding: 10px; 
   }
   
-  .regbl > div {
-    margin: 0 40px; 
+  .regbl >div {
+    margin: 0 60px; 
+    text-align: center;
   }
 
-  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+   button.button-container {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
